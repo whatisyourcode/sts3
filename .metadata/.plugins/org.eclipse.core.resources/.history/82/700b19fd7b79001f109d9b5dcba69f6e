@@ -1,0 +1,5 @@
+package chap03;
+
+public class MemberRegisterService {
+	private MemberDao memberDao;
+}

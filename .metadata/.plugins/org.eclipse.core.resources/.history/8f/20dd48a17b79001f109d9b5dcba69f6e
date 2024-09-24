@@ -1,0 +1,10 @@
+package chap03;
+
+public class ChangePasswordService {
+	
+	private MemberDao memberDao;
+	
+	public void changePassword(String email,String oldPwd,String newPwd) {
+		Member member = memberDao.selectByEmail(email);
+	}
+}

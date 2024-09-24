@@ -1,0 +1,9 @@
+package spring;
+
+
+
+public class MemberInfoPrinter {
+	private MemberDao memDao;
+	private MemberPrinter printer;
+	
+}

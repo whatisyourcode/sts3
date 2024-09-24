@@ -1,0 +1,9 @@
+package Entity;
+
+public class OrderItem {
+	 private Long id;
+	 private Long itemId;
+	 private Long orderId;
+	 private int orderPrice;
+	 private int count;
+}

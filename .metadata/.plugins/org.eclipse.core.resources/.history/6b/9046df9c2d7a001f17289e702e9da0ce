@@ -1,0 +1,20 @@
+package domain.entity;
+
+import domain.value.Address;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@AllArgsConstructor
+@ToString
+public class Delivery {
+	public Delivery(Long deliveryId) {
+		this.id = deliveryId;
+	}
+	private Long id;
+	private Order order;
+	private Address address;
+	
+
+}

@@ -1,0 +1,10 @@
+package chap03;
+
+import java.util.HashMap;
+
+public class MemberDao {
+	
+	private static long nextId = 0; 
+	
+	private Map<String, Member> map = new HashMap<>();
+}

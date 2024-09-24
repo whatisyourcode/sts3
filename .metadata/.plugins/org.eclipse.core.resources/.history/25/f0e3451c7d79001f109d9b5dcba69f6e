@@ -1,0 +1,16 @@
+package chap03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class MainForAssembler {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		BufferedReader reader = 
+				new BufferedReader(new InputStreamReader(System.in));
+		
+		
+	}
+
+}
