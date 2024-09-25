@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value=" private Long id;&#x0A;    private Long itemId;&#x0A;    private Long orderId;&#x0A;    private int orderPrice;&#x0A;    private int count;"/>
 			<item value="Assem"/>
 			<item value="writeD"/>
 			<item value="write"/>

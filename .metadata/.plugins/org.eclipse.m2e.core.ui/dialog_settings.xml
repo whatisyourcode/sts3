@@ -2,11 +2,17 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="chap05"/>
+			<item value="chap04"/>
+			<item value="chap03"/>
 			<item value="chap02"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="chap05"/>
+			<item value="chap04"/>
+			<item value="chap03"/>
 			<item value="chap02"/>
 		</list>
 		<list key="version">
@@ -19,6 +25,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\_devSts3\proj0924"/>
 			<item value="C:\_devSts3\test01"/>
 		</list>
 		<list key="projectNameTemplate">
