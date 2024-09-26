@@ -13,6 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import domain.entity.Item;
 
 public class DbQuery {
+	private JdbcTemplate jdbcTemplate;
 	private DataSource dataSource;
 
 	public DbQuery(DataSource dataSource) {
@@ -20,8 +21,6 @@ public class DbQuery {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
-	private JdbcTemplate jdbcTemplate;
-
 	public List<Item> findAllItem() {
 		String sql = "select * from item";
 		return jdbcTemplate.query(sql, (rs, rn)->{

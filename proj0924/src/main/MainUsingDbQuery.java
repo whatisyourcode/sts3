@@ -19,7 +19,9 @@ public class MainUsingDbQuery {
 		int count = dbQuery.count();
 		System.out.println(count);
 		List<Item> items = dbQuery.findAllItem();
-		System.out.println(items);
+		for (Item item : items) {
+			System.out.println(item);
+		}
 		ctx.close();
 	}
 }
