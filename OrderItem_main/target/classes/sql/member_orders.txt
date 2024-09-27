@@ -1,0 +1,33 @@
+CREATE TABLE orders (
+    id BIGINT PRIMARY KEY auto_increment,
+    member_id BIGINT,
+    city VARCHAR(255),
+    street varchar(255),
+    zipcode varchar(10),
+    order_date DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE member (
+    id BIGINT PRIMARY KEY  auto_increment,
+    name VARCHAR(255),
+    city VARCHAR(255),
+    street varchar(255),
+    zipcode varchar(10)
+);
+
+
+insert into member(name, city, street, zipcode) values
+('홍길동', '서울 마포구', '가길', 301),
+('강하나', '성남 복정동', '다길', 701);
+
+insert into orders(member_id, city, street, zipcode, order_date)
+values (1, '서울 마포구', '가길', '301', now());
+
+insert into order_item(item_id, order_id, orderprice, count)
+values (1, 1, 3000, 10);
+
+select m.name, i.name, i.price, oi.count, oi.orderprice, o.order_date
+  from member m, orders o, order_item oi, item i
+ where m.id = o.member_id
+   and o.id = oi.order_id
+   and oi.item_id = i.id
